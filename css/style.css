@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+
+body, html{
+    width: 100%;
+    margin: 0 auto;
+    font-family: roboto;
+    color: white;
+}
+
+
+
+nav{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    height: 70px;
+    width: 100%;
+    line-height: 70px;
+    text-align: center;
+}
+
+.menu-items{
+    width: 60%;
+    margin-left: 17%;
+}
+
+.logo{
+    margin-left: 7.5%;
+    height: 35px;
+    min-height: 35px;
+    min-width: 150px;
+    width: 150px;
+    background-image: url('../Imagens_teste-master/web/logo.png');
+    background-size: 100% 100%;
+    margin-top: 15px;
+    background-repeat: no-repeat;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-around;
+}
+
+
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    justify-content: space-around;
+    white-space: nowrap;
+}
+
+.banner-section{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../Imagens_teste-master/web/s1 ft1.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.banner-section .full-digital{
+    width: 65%;
+    height: 500px;
+    font-weight: 300;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    
+}
+
+.full-digital h1{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 8vw;
+    position: relative;
+}
+
+.banner-section  p{
+    margin: 0 auto;
+    width: 45%;
+    font-weight: lighter;
+    margin-top: -15px;
+}
+
+.banner-section .banner-btn{
+    width: 220px;
+    margin: 0 auto;
+    margin-top: 50px;
+    background-color: rgb(28, 212, 233);
+    padding: 20px 15px;
+    border-radius: 35px;
+}

@@ -14,8 +14,6 @@ body, html{
     color: white;
 }
 
-
-
 nav{
     position: absolute;
     display: flex;
@@ -38,20 +36,15 @@ nav{
     background-repeat: no-repeat;
 }
 
-.mobile-menu-items{
-    position: absolute;
-    left: -70%;
-    transition: 0.3s;
-    display: none;
-    width: 45%;
-    z-index: 2;
-}
 
 
 label{
+    display: none;
     margin-top: 20px;
     position: absolute;
-    left: 20px
+    left: 20px;
+    cursor: pointer;
+    transition: 0.5s;
 }
 
 label .line{
@@ -63,31 +56,75 @@ label .line{
     border-radius: 10px;
     position: relative;
     z-index: 3;
-    cursor: pointer;
+    transition: 0.5s;
 }
 
-.mobile-menu-items ul{
+.mobile-menu-items{
     position: absolute;
+    left: -70%;
+    transition: 0.5s;
+    display: none;
+    width: 45%;
+    z-index: 2;
+}
+
+.mobile-menu-items ul.menu{
+    position: relative;
     list-style-type: none;
     width: 100%;
     padding-top: 55px;
     padding-left: 10%;
     padding-right: 10%;
-    height: 400px;
-    background: gray;
+    height: 350px;
+    background-color: rgba(255, 255, 255, .20);
+    backdrop-filter: blur(10px);
     border-top-right-radius: 25px 25px;
     border-bottom-right-radius: 25px 25px;
-    line-height: 60px;
+    line-height: 45px;
 }
 
 .mobile-menu-items ul li a{
     color: white;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 500;
-    transition: 0.3s
+    transition: 0.3s;
 }
 
+.mobile-menu-items ul li span{
+    transform: rotateZ(180deg);
+}
+
+.mobile-menu-items ul li{
+    font-weight: 300px;
+    -moz-user-select:none;
+    -webkit-user-select:none;
+}
+
+.submenu{
+    padding-left: 15px;
+}
+
+.up{
+    display: none;
+}
+
+.down{
+    display: block;
+    position: relative;
+    left: 50%;
+    top: -5px;
+    transform: translateX(-50%);
+    padding: 0;
+    margin-right: 0;
+    width: 60%;
+    line-height: 25px;
+    list-style-type: none;
+}
+
+.down li{
+    font-size: 13px
+}
 
 .desktop-menu-items{
     width: 60%;
@@ -123,6 +160,7 @@ nav ul li a:hover{
     background-image: url('../Imagens_teste-master/web/s1 ft1.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     text-align: center;
 }
 
@@ -169,18 +207,8 @@ nav ul li a:hover{
     }
 }
 
-@media screen and (max-width: 823px){
-    div.desktop-menu-items{
-        width: 75%;
-        margin-left: 2%;
-    }
 
-    div.desktop-menu-items ul li a{
-        font-size: 14px
-    }
-}
-
-@media screen and (max-width: 8503px){
+@media screen and (max-width: 8053px){
     div.logo{
         margin: 20px auto;
     }
@@ -193,11 +221,16 @@ nav ul li a:hover{
         display: flex;
         flex-direction: column;
     }
+    label{
+        display: block;
+    }
     .banner-section{
         background-size: 170% 120%;
         background-position: center
     }
     section.banner-section  p{
+        position: relative;
+        top: -130px;
         width: 75%;
     }
     .banner-section .full-digital{

@@ -31,17 +31,37 @@
                     <div class="line"></div>
                     <div class="line"></div>
             </label>
-            
+
             <div class="mobile-menu-items">
-                <input type= 'checkbox' id='check'>
-                <ul>
+                <input style = "display: none" type= 'checkbox' id='check' checked>
+                <ul class="menu">
+                    
                     <li> <a href="">HOME</a></li>
                     <hr>
-                    <li><a href="">SERVIÇOS</a></li>
+                    <li> <a href="">SOBRE A ROCKY</a></li>
                     <hr>
-                    <li><a href="">DIFERENCIAIS</a></li>
+                    <li style = "padding-left: 15px;" class="submenu" unselectable="on"><a href="">SERVIÇOS </a><span>▼</span>
+                        <ul class="submenu-ul up">
+                            <li><a class="submenu-a" href=""></a>LOREM IPSUM</li>
+                            <li><a class="submenu-a" href=""></a>LOREM IPSUM</li>
+                            <li><a class="submenu-a" href=""></a>LOREM IPSUM</li>
+                            <li><a class="submenu-a" href=""></a>LOREM IPSUM</li>
+                            <li><a class="submenu-a" href=""></a>LOREM IPSUM</li>
+                        </ul>
+                    </li>
                     <hr>
-                    <li><a href="">TRABALHE CONOSCO</a></li><hr>
+                    <li class="submenu" unselectable="on"><a href="">DIFERENCIAIS </a><span>▼</span>
+                        <ul class="submenu-ul up">
+                            <li><a class="submenu-a" href=""></a>LOREM IPSUM</li>
+                            <li><a class="submenu-a" href=""></a>LOREM IPSUM</li>
+                            <li><a class="submenu-a" href=""></a>LOREM IPSUM</li>
+                            <li><a class="submenu-a" href=""></a>LOREM IPSUM</li>
+                            <li><a class="submenu-a" href=""></a>LOREM IPSUM</li>
+                        </ul>
+                    </li>
+                    <hr>
+                    <li><a href="">TRABALHE CONOSCO</a></li>
+                    <hr>
                     <li><a href="">CONTATO</a></li>
                     <hr>
                     <li><a href="">BLOG</a></li>
@@ -65,7 +85,8 @@
         </div>
     </section>
 
-
+    <script src="js/jquery.js"></script>
     <script src="js/main.js"></script>
+    
 </body>
 </html>

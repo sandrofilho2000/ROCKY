@@ -223,6 +223,7 @@ nav ul li a:hover{
     margin-top: 10px;
 }
 
+
 .sobre{
     color: black;
     background-color: white;
@@ -356,6 +357,7 @@ nav ul li a:hover{
 }
 
 footer{
+    width: 100%;
     height: 100vh;
     background-color: rgb(25, 25, 25);
 }
@@ -366,11 +368,132 @@ footer{
     background-color: rgb(209, 201, 9)
 }
 
-
-
 .footer-line-down{
     position: relative;
     top: 90%;
+}
+
+.f-inner{
+    margin-top: 45px;
+    vertical-align: middle;
+    width: 30%;
+    height: 75%;
+}
+
+.footer-left{
+    float: left;
+    margin-left: 65px;
+    padding-left: 20px;
+}
+
+
+.footer-right{
+    float: right;
+    margin-right: 65px;
+    padding-right: 20px;
+}
+
+.icons{
+    height: 40px;
+}
+
+.footer-logo{
+    height: 40px;
+    width: 150px;
+    background-image: url('../Imagens_teste-master/web/logo.png');
+    background-size: 100% 100%;
+    background-position: center;
+    float: left;
+}
+
+
+.facebook {
+    height: 38px;
+    width: 43px;
+    background-image: url('../Imagens_teste-master/web/facebook-icon.png');
+    filter: grayscale(1) invert(1);
+    background-size: 100% 100%;
+    float: right;
+    margin-right: 38px;
+    margin-top: 1px;
+}
+
+.linkedin{
+    height: 30px;
+    width: 30px;
+    background-image: url('../Imagens_teste-master/web/linkedin-icon.png');
+    filter: grayscale(1) invert(1);
+    background-size: 100% 100%;
+    float: right;
+    margin-right: -10px;
+    margin-top: 5px;
+}
+
+.email-cel-container{
+    height: 30px;
+    width: 450px;
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    margin-top: 35px;
+}
+
+.email, .phone{
+    display: flex;
+    flex-direction: row;
+    height: 28px;
+    width: 200px;
+}
+
+.email i{
+    line-height: 28px;
+}
+
+.phone i{
+    line-height: 30px;
+}
+
+.email span, .phone span{
+   line-height: 28px;
+   margin-left: 13px;
+   opacity: 0.7;
+}
+
+.splitter{
+    height: 22px;
+    width: 1px;
+    margin-top: 2px;
+    background-color: white;
+    margin-left: 69px;
+    margin-right: 69px;
+    opacity: 0.4;
+}
+
+
+.address{
+    position: absolute;
+    margin-top: 35px;
+    width: 450px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.address-span{
+    font-size: 9px;
+    opacity: 0.6;
+    margin-left: 17px;
+    text-align: left;
+}
+
+
+.footer-lorem{
+    margin-top: 115px;
+}
+
+
+.footer-lorem p{
+    margin-bottom: 25px;
 }
 
 @media screen and (max-width: 1029px){

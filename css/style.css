@@ -14,7 +14,7 @@ body, html{
     font-family: Montserrat;
     color: white;
     background-image: url('../Imagens_teste-master/web/bg.png');
-    background-size: 100% 100%;
+    background-size: 105% 105%;
     background-repeat: no-repeat;
 }
 
@@ -179,7 +179,7 @@ nav ul li a:hover{
 
 .banner-section{
     width: 100%;
-    height: 115vh;
+    height: 117vh;
     background-image: url('../Imagens_teste-master/web/s1 ft1.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -229,20 +229,19 @@ nav ul li a:hover{
 .about{
     width: 100%;
     position: relative;
-    top: -50px;
-    padding: 0 20px; 
-    transform: scale(0.9);
+    padding: 0 120px; 
 }
 
 .sobre-container{
-    width: 75%;
+    width: 72%;
     height: 500px;
+    position: relative;
 }
 
 .sobre-container h2{
     color: black;
     font-size: 40px;
-    margin-top: 10px;
+    margin-top: 50px;
 }
 
 
@@ -250,8 +249,9 @@ nav ul li a:hover{
     color: black;
     background-color: white;
     box-shadow: 1px -2px 27px -11px rgba(0,0,0,1);
-    margin-top: 95px;
+    margin-top: 80px;
     padding: 35px;
+    
 }
 
 .sobre p:not(:first-of-type){
@@ -261,11 +261,15 @@ nav ul li a:hover{
 .servicos{
     width: 100%;
     height: 600px;
-    display: inline-block;
-    margin-top: 180px;
-    
+    margin-top: 200px;
 }
 
+.servicos-container{
+    height: 100%;
+    display: flex;
+    text-align: center;
+    padding: 15px;
+}
 
 .servicos h2{
     color: black;
@@ -274,11 +278,11 @@ nav ul li a:hover{
 }
 
 .serv{
-    margin-top: 55px;
+    margin-top: 85px;
     margin-left: -15px;
-    height: 450px;
+    height: 480px;
     float: left;
-    width: calc(99% / 3);
+    width: calc(95% / 3);
     background-image: url('../Imagens_teste-master/web/s3\ ft3.png');
     background-position: center;
     background-size: 100% 100%;
@@ -286,9 +290,6 @@ nav ul li a:hover{
     padding: 45px 0;
 }
 
-.serv:not(:first-of-type){
-    margin-left: 10px;
-}
 
     
 
@@ -312,9 +313,13 @@ nav ul li a:hover{
 }
 .servico2{
     background-image: url('../Imagens_teste-master/web/s3\ ft2.png');
+    left: 60px;
+    position: relative;
 }
 .servico3{
     background-image: url('../Imagens_teste-master/web/s3\ ft3.png');
+    left: 120px;
+    position: relative;
 }
 
 
@@ -323,28 +328,40 @@ nav ul li a:hover{
 .diferente{
     width: 100%;
     height: 600px;
-    display: inline-block;
-    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 150px;
 }
-
 
 .diferente h2{
     color: black;
     font-size: 40px;
-    
+    position: absolute;
+
 }
 
+.diferente-container{
+    text-align: center;
+    width: calc(100% / 3);
+    height: 100%;
+    margin-top: 20px;
+}
+
+
 .dife{
-    margin-top: 55px;
-    margin-left: -15px;
+    margin: 95px auto;
     height: 450px;
-    float: left;
-    width: calc(75% / 3);
-    background-image: url('../Imagens_teste-master/web/s3\ ft3.png');
+    max-width: 270px;
     background-position: center;
     background-size: 100% 100%;
     text-align: center;
     padding: 45px 0;
+}
+
+.dife img{
+    height: 100px;
+    margin-top: 25px;
 }
 
 .dife:not(:first-of-type){
@@ -360,40 +377,42 @@ nav ul li a:hover{
 }
 
 .dife p{
-    width: 85%;
+    width: 68%;
     margin: 0 auto;
-    margin-top: 45px;
+    margin-top: 30px;
 }
 
-.dife p:nth-of-type(2){
-    margin-top: 55px;
-}
-.diferencial1{
+
+div.diferencial1{
     background-image: url('../Imagens_teste-master/web/s4\ ft1.png');
+    position: relative;
+    float: left;
+    left: -15px;
 }
-.diferencial2{
+div.diferencial2{
     background-image: url('../Imagens_teste-master/web/s4\ ft2.png');
+    float: none;
+    position: relative;
+    right: -6px;;
+    
 }
-.diferencial3{
+div.diferencial3{
     background-image: url('../Imagens_teste-master/web/s4\ ft3.png');
+    float: right;
+    position: relative;
+    right: -20px;;
 }
 
 footer{
     width: 100%;
-    height: 730px;
+    height: 825px;
     background-color: rgb(25, 25, 25);
+    position: relative;
+    top: 235px;
+    border-top: 55px solid rgb(209, 201, 9);
+    border-bottom: 55px solid rgb(209, 201, 9);
 }
 
-.f-line{
-    height: 55px;
-    width: 100%;
-    background-color: rgb(209, 201, 9);
-}
-/**/
-.footer-line-down{
-    position: absolute;
-    z-index: 999;
-}
 
 .container{
     width: 100%;
@@ -402,6 +421,7 @@ footer{
     top: 30%;
     left: 50%;
     transform: translateY(-30%) translateX(-50%);
+    padding-top: 15px;
 }
 
 .f-inner{
@@ -417,7 +437,7 @@ footer{
 }
 
 .left-container{
-    padding-left: 8%;
+    padding-left: 13%;
 }
 
 .right-container{
@@ -429,6 +449,13 @@ footer{
     height: 40px;
     position: relative;
     padding-right: 32%;
+}
+
+.footer-media{
+    height: 40px;
+    width: 30%;
+    float: right;
+    text-align: center;
 }
 
 .footer-logo{
@@ -529,7 +556,7 @@ footer{
 
 .footer-lorem p{
     margin-bottom: 26px;
-    width: 70%;
+    width: 100%;
 }
 
 
@@ -541,18 +568,18 @@ footer{
 
 footer form{
     background-color: rgb(129, 129, 129);
-    height: 100%;
-    width: 85%;
+    height: 93%;
+    width: 65%;
     position: relative;
-    right: -5%;
+    right: -21%;
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 20px 20px 0 20px;
 }
 
 footer form input{
     border: none;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
     height: 60px;
     padding: 15px;
     font-size: 22px;
@@ -574,7 +601,7 @@ footer form textarea::placeholder{
 }
 
 footer form input[type=submit]{
-    margin-top: 35px;
+    margin-top: 45px;
     height: 65px;
     background-color: rgb(28, 212, 233);
     border: 0;
@@ -590,7 +617,7 @@ footer form input[type=submit]{
 
 
 
-@media screen and (max-width: 1029px){
+@media screen and (max-width: 1124px){
     div.desktop-menu-items{
         width: 70%;
         margin-left: 7%;
@@ -598,7 +625,13 @@ footer form input[type=submit]{
     }
 }
 
-@media screen and (max-width: 853px){
+@media screen and (max-width: 1037px){
+    
+    .footer-lorem{
+        margin-top: 96px;
+    }
+}
+@media screen and (max-width: 9490px){
     div.logo{
         margin: 20px auto;
     }
@@ -626,4 +659,63 @@ footer form input[type=submit]{
     .banner-section .full-digital{
         top: 35%;
     }
+    footer{
+        display: flex;
+        flex-direction: column;
+        height: 1090px;
+        border-top: 25px solid rgb(209, 201, 9);
+        border-bottom: 25px solid rgb(209, 201, 9);
+    }
+    .footer-right{
+        float: none;
+        width: 100%;
+        transform: none;
+    }
+    
+    .footer-left{
+        padding-left: 0%;
+        float: none;
+        width: 100%;
+        transform: none;
+        height: 50%;
+    }
+
+    .footer-media{
+        height: 40px;
+        width: 30%;
+        float: right;
+        position: absolute;
+        right: 0;
+    }
+
+    .footer-lorem{
+        text-align: center;
+    }
+    
+    .facebook{
+        margin-left: -15px;
+    }
+
+    .linkedin{
+        margin-right: 0px;
+    }
+
+    footer form{
+        height: 100%;
+        width: 100%;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%)  translateY(-50%);
+        padding: 40px;
+    }
+
+    footer form textarea{
+        height: 20%;
+    }
+    .left-container{
+        padding: 70px;
+        padding-bottom: 0px;
+    }
+
+    
 }

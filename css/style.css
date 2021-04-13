@@ -364,18 +364,26 @@ footer{
 }
 
 .f-line{
-    height: 60px;
+    height: 55px;
     width: 100%;
-    background-color: rgb(209, 201, 9)
+    background-color: rgb(209, 201, 9);
+}
+/**/
+.footer-line-down{
+    position: absolute;
+    z-index: 999;
 }
 
-.footer-line-down{
+.container{
+    width: 600px;
+    height: 590px;
     position: relative;
-    top: 90%;
+    top: 30%;
+    left: 50%;
+    transform: translateY(-30%) translateX(-50%);
 }
 
 .f-inner{
-    margin-top: 45px;
     vertical-align: middle;
     width: 30%;
     height: 75%;
@@ -383,19 +391,23 @@ footer{
 
 .footer-left{
     float: left;
-    margin-left: 65px;
-    padding-left: 20px;
+    width: 50%;
+    height: 100%;
 }
 
-
-.footer-right{
-    float: right;
-    margin-right: 65px;
-    padding-right: 20px;
+.left-container{
+    padding-left: 8%;
 }
+
+.right-container{
+    padding-left: 0%;
+}
+
 
 .icons{
     height: 40px;
+    position: relative;
+    padding-right: 32%;
 }
 
 .footer-logo{
@@ -415,7 +427,7 @@ footer{
     filter: grayscale(1) invert(1);
     background-size: 100% 100%;
     float: right;
-    margin-right: 38px;
+    margin-right: 32px;
     margin-top: 1px;
 }
 
@@ -489,13 +501,72 @@ footer{
 
 
 .footer-lorem{
-    margin-top: 115px;
+    margin-top: 110px;
+    position: relative;
 }
 
 
 .footer-lorem p{
-    margin-bottom: 25px;
+    margin-bottom: 26px;
+    width: 70%;
 }
+
+
+.footer-right{
+    float: right;
+    height: 100%;
+    width: 50%;
+}
+
+footer form{
+    background-color: rgb(129, 129, 129);
+    height: 100%;
+    width: 85%;
+    position: relative;
+    right: -5%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+footer form input{
+    border: none;
+    margin-bottom: 35px;
+    height: 60px;
+    padding: 15px;
+    font-size: 22px;
+}
+footer form input::placeholder{
+    color: rgb(215, 215, 215);
+}
+
+
+footer form textarea{
+    resize: none;
+    border: none;
+    padding: 15px;
+    font-size: 22px;
+}
+
+footer form textarea::placeholder{
+    color: rgb(215, 215, 215);
+}
+
+footer form input[type=submit]{
+    margin-top: 35px;
+    height: 65px;
+    background-color: rgb(28, 212, 233);
+    border: 0;
+    color: white;
+    font-size: 22px;
+}
+
+
+
+
+
+
+
 
 @media screen and (max-width: 1029px){
     div.desktop-menu-items{

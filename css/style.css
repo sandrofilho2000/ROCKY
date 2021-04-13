@@ -79,22 +79,32 @@ label .line{
     list-style-type: none;
     width: 100%;
     padding-top: 55px;
-    padding-left: 10%;
-    padding-right: 10%;
-    height: 350px;
+    height: 385px;
     background-color: rgba(255, 255, 255, .20);
     backdrop-filter: blur(10px);
     border-top-right-radius: 25px 25px;
     border-bottom-right-radius: 25px 25px;
     line-height: 45px;
 }
-
+hr
+{
+    width: 80%;
+    margin: 0 auto;
+}
 .mobile-menu-items ul li a{
     color: white;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 500;
     transition: 0.3s;
+    white-space: nowrap;
+}
+
+
+.mobile-menu-items ul li a:not('.submenu'){
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .mobile-menu-items ul li span{
@@ -129,7 +139,14 @@ label .line{
 }
 
 .down li{
-    font-size: 13px
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+.down li:hover{
+    color: rgb(28, 212, 233);
 }
 
 .desktop-menu-items{
@@ -175,9 +192,10 @@ nav ul li a:hover{
     font-weight: 300;
     margin: 0 auto;
     position: relative;
-    top: 47%;
+    top: 48.5%;
     transform: translateY(-50%);
     text-align: center;
+    line-height: 140px;
     
 }
 
@@ -191,25 +209,28 @@ nav ul li a:hover{
 
 .banner-section  p{
     margin: 0 auto;
-    width: 55%;
+    width: 50%;
     font-weight: lighter;
-    margin-top: 7px;
+    margin-top: 60px;
 }
 
 .banner-section .banner-btn{
     width: 270px;
     margin: 0 auto;
-    margin-top: 40px;
+    margin-top: 70px;
     background-color: rgb(28, 212, 233);
     padding: 20px 15px;
     border-radius: 35px;
     font-weight: bold;
     font-size: 15px;
+    cursor: pointer;
 }
 
 .about{
     width: 100%;
-    padding: 40px 0%;
+    position: relative;
+    top: -50px;
+    padding: 0 20px; 
     transform: scale(0.9);
 }
 
@@ -375,7 +396,7 @@ footer{
 }
 
 .container{
-    width: 600px;
+    width: 100%;
     height: 590px;
     position: relative;
     top: 30%;
@@ -559,6 +580,7 @@ footer form input[type=submit]{
     border: 0;
     color: white;
     font-size: 22px;
+    cursor: pointer;
 }
 
 

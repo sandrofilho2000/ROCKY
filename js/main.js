@@ -8,7 +8,7 @@ $(function(){
     $('.checklabel').click(function(){
     
         if(check.checked==true){
-            $('.checklabel').css('left', '45%')
+            $('.checklabel').css('left', '35%')
             $(".mobile-menu-items").css('left', '0%')
             $(".line").eq(0).css('transform', 'rotateZ(-45deg) translateY(330%)')
             $(".line").eq(1).css('opacity', '0')
@@ -41,16 +41,16 @@ $(function(){
         }
         sp1++; 
         if(span2 == false && span1 == false){
-            $('ul.menu').css("height", "350px")
+            $('ul.menu').css("height", "385px")
         }
         else if(span2 == true && span1 == false){
-            $('ul.menu').css("height", "465px")
+            $('ul.menu').css("height", "515px")
         }
         else if(span2 == false && span1 == true){
-            $('ul.menu').css("height", "465px")
+            $('ul.menu').css("height", "515px")
         }
         else if(span2 == true && span1 == true){
-            $('ul.menu').css("height", "580px")
+            $('ul.menu').css("height", "642px")
         }
     })
 
@@ -70,16 +70,16 @@ $(function(){
         }
         sp2++;
         if(span2 == false && span1 == false){
-            $('ul.menu').css("height", "350px")
+            $('ul.menu').css("height", "385px")
         }
         else if(span2 == true && span1 == false){
-            $('ul.menu').css("height", "465px")
+            $('ul.menu').css("height", "515px")
         }
         else if(span2 == false && span1 == true){
-            $('ul.menu').css("height", "465px")
+            $('ul.menu').css("height", "515px")
         }
         else if(span2 == true && span1 == true){
-            $('ul.menu').css("height", "580px")
+            $('ul.menu').css("height", "642px")
         }
     })
 

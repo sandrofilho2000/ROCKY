@@ -19,7 +19,8 @@ body, html{
 }
 
 
-
+/***HEADER***/
+/*NAV MENU'S*/
 nav{
     position: absolute;
     display: flex;
@@ -176,7 +177,11 @@ hr
 nav ul li a:hover{
     color: rgb(28, 212, 233)
 }
+/*end nav menu */
 
+
+
+/*BANNER SECTION*/
 .banner-section{
     width: 100%;
     height: 117vh;
@@ -225,7 +230,11 @@ nav ul li a:hover{
     font-size: 15px;
     cursor: pointer;
 }
+/*end banner section*/
+/***end header***/
 
+
+/***MAIN SECTION ABOUT***/
 .about{
     width: 100%;
     position: relative;
@@ -244,7 +253,6 @@ nav ul li a:hover{
     margin-top: 50px;
 }
 
-
 .sobre{
     color: black;
     background-color: white;
@@ -257,6 +265,10 @@ nav ul li a:hover{
 .sobre p:not(:first-of-type){
     margin-top: 20px;
 }
+
+
+
+/*SERVICES SECTION*/
 
 .servicos{
     width: 100%;
@@ -290,9 +302,6 @@ nav ul li a:hover{
     padding: 45px 0;
 }
 
-
-    
-
 .serv h3{
     white-space: nowrap;
     margin: 0 auto;
@@ -321,9 +330,10 @@ nav ul li a:hover{
     left: 120px;
     position: relative;
 }
+/*end services section*/
 
 
-
+/*DIFFERENCIAL SECTION*/
 
 .diferente{
     width: 100%;
@@ -402,6 +412,13 @@ div.diferencial3{
     position: relative;
     right: -20px;;
 }
+/*end differencial section*/
+/***end main section about***/
+
+
+
+
+/***FOOTER SECTION***/
 
 footer{
     width: 100%;
@@ -430,6 +447,9 @@ footer{
     height: 75%;
 }
 
+
+
+/*FOOTER LEFT SIDE*/
 .footer-left{
     float: left;
     width: 50%;
@@ -528,7 +548,6 @@ footer{
     opacity: 0.4;
 }
 
-
 .address{
     position: absolute;
     margin-top: 35px;
@@ -563,7 +582,12 @@ footer{
 .p-mobile{
     display: none;
 }
+/*end footer left side*/
 
+
+
+
+/*FOOTER RIGHT SIDE*/
 .footer-right{
     float: right;
     height: 100%;
@@ -614,7 +638,10 @@ footer form input[type=submit]{
     cursor: pointer;
 }
 
+/*end footer right side*/
+/***end footer ***/
+/***END DESKTOP***/
 
-/***618 ROWS***/
+/***645 ROWS***/
 
 

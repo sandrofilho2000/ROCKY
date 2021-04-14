@@ -6,8 +6,6 @@
     box-sizing: border-box;
 }
 
-
-
 body, html{
     width: 100%;
     margin: 0 auto;
@@ -43,9 +41,6 @@ nav{
     background-repeat: no-repeat;
 }
 
-
-
-
 .desktop-menu-items{
     width: 57%;
     margin-left: 17%;
@@ -59,7 +54,6 @@ nav{
     list-style-type: none;
     justify-content: space-around;
 }
-
 
 .desktop-menu-items ul li a{
     color: white;
@@ -80,7 +74,7 @@ nav ul li a:hover{
 /*BANNER SECTION*/
 .banner-section{
     width: 100%;
-    height: 117vh;
+    height: 119vh;
     background-image: url('../Imagens_teste-master/web/s1 ft1.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -169,7 +163,7 @@ nav ul li a:hover{
 .servicos{
     width: 100%;
     height: 600px;
-    margin-top: 200px;
+    margin-top: 310px;
 }
 
 .servicos-container{
@@ -186,7 +180,7 @@ nav ul li a:hover{
 
 .serv{
     margin-top: 85px;
-    height: 480px;
+    height: 440px;
     float: left;
     width: calc(95% / 3);
     background-image: url('../Imagens_teste-master/web/s3\ ft3.png');
@@ -202,7 +196,6 @@ nav ul li a:hover{
     margin: 0 auto;
     justify-content: center;
     font-size: 1.3vw;
-    
 }
 
 .serv p{
@@ -226,6 +219,8 @@ nav ul li a:hover{
 /*end services section*/
 
 
+
+
 /*DIFFERENCIAL SECTION*/
 
 .diferente{
@@ -234,8 +229,8 @@ nav ul li a:hover{
     display: flex;
     flex-direction: row;
     position: relative;
-    top: 150px;
-    background: red;
+    top: 100px;
+    bottom: 30px;
     justify-content: space-between;
 }
 
@@ -243,14 +238,11 @@ nav ul li a:hover{
     color: black;
     font-size: 40px;
     position: absolute;
-
 }
 
-
-
 .dife{
-    margin-top: 100px;
-    height: 450px;
+    margin-top: 130px;
+    height: 470px;
     max-width: 270px;
     background-position: center;
     background-size: 100% 100%;
@@ -275,10 +267,8 @@ nav ul li a:hover{
     margin-top: 30px;
 }
 
-
 div.diferencial1{
     background-image: url('../Imagens_teste-master/web/s4\ ft1.png');
-
 }
 div.diferencial2{
     background-image: url('../Imagens_teste-master/web/s4\ ft2.png');
@@ -293,18 +283,18 @@ div.diferencial3{
 
 
 
+
 /***FOOTER SECTION***/
 
 footer{
     width: 100%;
-    height: 825px;
+    height: 850px;
     background-color: rgb(25, 25, 25);
     position: relative;
     top: 234px;
     border-top: 55px solid rgb(209, 201, 9);
     border-bottom: 55px solid rgb(209, 201, 9);
 }
-
 
 .container{
     width: 100%;
@@ -322,8 +312,6 @@ footer{
     height: 75%;
 }
 
-
-
 /*FOOTER LEFT SIDE*/
 .footer-left{
     float: left;
@@ -338,7 +326,6 @@ footer{
 .right-container{
     padding-left: 0%;
 }
-
 
 .icons{
     height: 40px;
@@ -361,7 +348,6 @@ footer{
     background-position: center;
     float: left;
 }
-
 
 .facebook {
     height: 38px;
@@ -398,7 +384,6 @@ footer{
 .email, .phone{
     display: flex;
     flex-direction: row;
- 
 }
 
 .email i{
@@ -490,7 +475,6 @@ footer form input{
 footer form input::placeholder{
     color: rgb(215, 215, 215);
 }
-
 
 footer form textarea{
     resize: none;

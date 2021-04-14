@@ -1,21 +1,167 @@
+label{
+    display: none;
+    margin-top: 20px;
+    position: absolute;
+    left: 25px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+label .line{
+    display: block;
+    width: 45px;
+    height: 4px;
+    margin-top: 7px;
+    background: white;
+    border-radius: 50px;
+    position: relative;
+    z-index: 3;
+    transition: 0.5s;
+}
+
+.mobile-menu-items{
+    position: absolute;
+    left: -70%;
+    transition: 0.5s;
+    display: none;
+    width: 45%;
+    z-index: 2;
+}
+
+.mobile-menu-items ul.menu{
+    position: relative;
+    list-style-type: none;
+    width: 100%;
+    padding-top: 55px;
+    height: 385px;
+    background-color: rgba(255, 255, 255, .20);
+    backdrop-filter: blur(10px);
+    border-top-right-radius: 25px 25px;
+    border-bottom-right-radius: 25px 25px;
+    line-height: 45px;
+}
+hr
+{
+    width: 80%;
+    margin: 0 auto;
+}
+.mobile-menu-items ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 500;
+    transition: 0.3s;
+    white-space: nowrap;
+}
+
+
+.mobile-menu-items ul li a:not('.submenu'){
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.mobile-menu-items ul li span{
+    transform: rotateZ(180deg);
+}
+
+.mobile-menu-items ul li{
+    font-weight: 300px;
+    -moz-user-select:none;
+    -webkit-user-select:none;
+}
+
+.submenu{
+    padding-left: 15px;
+}
+
+.up{
+    display: none;
+}
+
+.down{
+    display: block;
+    position: relative;
+    left: 50%;
+    top: -5px;
+    transform: translateX(-50%);
+    padding: 0;
+    margin-right: 0;
+    width: 60%;
+    line-height: 25px;
+    list-style-type: none;
+}
+
+.down li{
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+.down li:hover{
+    color: rgb(28, 212, 233);
+}
+
+
+.img{
+    display: none;
+}
+    
+
 @media screen and (max-width: 1124px){
+
+
     div.desktop-menu-items{
         width: 70%;
         margin-left: 7%;
-
+    }
+    section.about{
+        padding: 0 50px; 
+    }
+    .servicos{
+        width: 100%;
+        height: 600px;
+        margin-top: 270px;
+    }
+    .servicos-container{
+        padding: 0;
+    }
+    .serv{
+        width: calc(97% / 3);
     }
 }
+
+
 
 @media screen and (max-width: 1037px){
     
     .footer-lorem{
         margin-top: 96px;
     }
+    
+    .sobre-container{
+        width: 85%;
+    }
 }
 @media screen and (max-width: 949px){
     body, html{
         background-image: none;
     }
+    .img{
+        width: 100%;
+        display: block
+    }
+    header{
+        position: absolute
+    }
+    .banner-section{
+        height: 700px;
+        background-image: none;
+        background-size: cover;
+        background-position: center;
+    }
+    
     div.logo{
         margin: 20px auto;
     }
@@ -40,9 +186,71 @@
         top: -130px;
         width: 75%;
     }
+    
+
     .banner-section .full-digital{
-        top: 35%;
+        top: 43.5%;
+        width: 100%;
     }
+
+    .full-digital h1{
+        text-align: center;
+        font-size: 9vw;
+        line-height: 65px;
+    }
+
+    .banner-section  p{
+        margin-top: 110px;
+    }
+
+    .banner-section .banner-btn{
+        width: 240px;
+        margin-top: 100px;
+        padding: 15px 15px;
+        font-size: 12px;
+    }
+
+
+    section.about{
+        padding: 0 25px; 
+        height: 20000px;
+    }
+    .sobre-container{
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .servicos-container{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-between;
+
+        width: 424px;
+        margin: 0 auto;
+    }
+    .servicos{
+        text-allign: center;
+        width: 444px;
+        margin: 0 auto;
+ 
+    }
+    .serv{
+        width: 424px;
+        height: 100%;
+        margin: 20px auto;
+    }
+    .servico1{
+    background-image: url('../Imagens_teste-master/mobile/s3\ ft1.png');
+    }
+    .servico2{
+        background-image: url('../Imagens_teste-master/mobile/s3\ ft2.png');
+    }
+    .servico3{
+        background-image: url('../Imagens_teste-master/mobile/s3\ ft3.png');
+    }
+
     footer{
         display: flex;
         flex-direction: column;
@@ -130,6 +338,9 @@
 @media screen and (max-width: 729px){
     .footer-lorem{
         margin-top: 90px;
+    }
+    .sobre-p-mobile{
+        display: none;
     }
 }
 

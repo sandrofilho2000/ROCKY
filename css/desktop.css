@@ -45,110 +45,6 @@ nav{
 
 
 
-label{
-    display: none;
-    margin-top: 20px;
-    position: absolute;
-    left: 20px;
-    cursor: pointer;
-    transition: 0.5s;
-}
-
-label .line{
-    display: block;
-    width: 30px;
-    height: 3px;
-    margin-top: 4px;
-    background: white;
-    border-radius: 10px;
-    position: relative;
-    z-index: 3;
-    transition: 0.5s;
-}
-
-.mobile-menu-items{
-    position: absolute;
-    left: -70%;
-    transition: 0.5s;
-    display: none;
-    width: 45%;
-    z-index: 2;
-}
-
-.mobile-menu-items ul.menu{
-    position: relative;
-    list-style-type: none;
-    width: 100%;
-    padding-top: 55px;
-    height: 385px;
-    background-color: rgba(255, 255, 255, .20);
-    backdrop-filter: blur(10px);
-    border-top-right-radius: 25px 25px;
-    border-bottom-right-radius: 25px 25px;
-    line-height: 45px;
-}
-hr
-{
-    width: 80%;
-    margin: 0 auto;
-}
-.mobile-menu-items ul li a{
-    color: white;
-    text-decoration: none;
-    font-size: 17px;
-    font-weight: 500;
-    transition: 0.3s;
-    white-space: nowrap;
-}
-
-
-.mobile-menu-items ul li a:not('.submenu'){
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.mobile-menu-items ul li span{
-    transform: rotateZ(180deg);
-}
-
-.mobile-menu-items ul li{
-    font-weight: 300px;
-    -moz-user-select:none;
-    -webkit-user-select:none;
-}
-
-.submenu{
-    padding-left: 15px;
-}
-
-.up{
-    display: none;
-}
-
-.down{
-    display: block;
-    position: relative;
-    left: 50%;
-    top: -5px;
-    transform: translateX(-50%);
-    padding: 0;
-    margin-right: 0;
-    width: 60%;
-    line-height: 25px;
-    list-style-type: none;
-}
-
-.down li{
-    font-size: 13px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-
-.down li:hover{
-    color: rgb(28, 212, 233);
-}
 
 .desktop-menu-items{
     width: 57%;
@@ -216,7 +112,7 @@ nav ul li a:hover{
     margin: 0 auto;
     width: 50%;
     font-weight: lighter;
-    margin-top: 60px;
+
 }
 
 .banner-section .banner-btn{
@@ -280,24 +176,23 @@ nav ul li a:hover{
     height: 100%;
     display: flex;
     text-align: center;
-    padding: 15px;
+    justify-content: space-between;
 }
 
 .servicos h2{
     color: black;
     font-size: 40px;
-    
 }
 
 .serv{
     margin-top: 85px;
-    margin-left: -15px;
     height: 480px;
     float: left;
     width: calc(95% / 3);
     background-image: url('../Imagens_teste-master/web/s3\ ft3.png');
     background-position: center;
     background-size: 100% 100%;
+    background-repeat: no-repeat;
     text-align: center;
     padding: 45px 0;
 }
@@ -306,6 +201,8 @@ nav ul li a:hover{
     white-space: nowrap;
     margin: 0 auto;
     justify-content: center;
+    font-size: 1.3vw;
+    
 }
 
 .serv p{
@@ -322,13 +219,9 @@ nav ul li a:hover{
 }
 .servico2{
     background-image: url('../Imagens_teste-master/web/s3\ ft2.png');
-    left: 60px;
-    position: relative;
 }
 .servico3{
     background-image: url('../Imagens_teste-master/web/s3\ ft3.png');
-    left: 120px;
-    position: relative;
 }
 /*end services section*/
 
@@ -342,6 +235,8 @@ nav ul li a:hover{
     flex-direction: row;
     position: relative;
     top: 150px;
+    background: red;
+    justify-content: space-between;
 }
 
 .diferente h2{
@@ -351,34 +246,22 @@ nav ul li a:hover{
 
 }
 
-.diferente-container{
-    text-align: center;
-    width: calc(100% / 3);
-    height: 100%;
-    margin-top: 20px;
-}
 
 
 .dife{
-    margin: 95px auto;
+    margin-top: 100px;
     height: 450px;
     max-width: 270px;
     background-position: center;
     background-size: 100% 100%;
     text-align: center;
-    padding: 45px 0;
+    padding-top: 40px;
 }
 
 .dife img{
     height: 100px;
     margin-top: 25px;
 }
-
-.dife:not(:first-of-type){
-    margin-left: 10px;
-}
-
-    
 
 .dife h3{
     white-space: nowrap;
@@ -395,22 +278,14 @@ nav ul li a:hover{
 
 div.diferencial1{
     background-image: url('../Imagens_teste-master/web/s4\ ft1.png');
-    position: relative;
-    float: left;
-    left: -15px;
+
 }
 div.diferencial2{
     background-image: url('../Imagens_teste-master/web/s4\ ft2.png');
-    float: none;
-    position: relative;
-    right: -6px;;
-    
+
 }
 div.diferencial3{
     background-image: url('../Imagens_teste-master/web/s4\ ft3.png');
-    float: right;
-    position: relative;
-    right: -20px;;
 }
 /*end differencial section*/
 /***end main section about***/

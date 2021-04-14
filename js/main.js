@@ -10,9 +10,9 @@ $(function(){
         if(check.checked==true){
             $('.checklabel').css('left', '35%')
             $(".mobile-menu-items").css('left', '0%')
-            $(".line").eq(0).css('transform', 'rotateZ(-45deg) translateY(330%)')
+            $(".line").eq(0).css('transform', 'rotateZ(-45deg) translateY(370%)')
             $(".line").eq(1).css('opacity', '0')
-            $(".line").eq(2).css('transform', 'rotateZ(45deg) translateY(-330%)')
+            $(".line").eq(2).css('transform', 'rotateZ(45deg) translateY(-370%)')
             $("li a span").html("▼")
         }
         else if(check.checked==false){
@@ -41,7 +41,7 @@ $(function(){
         }
         sp1++; 
         if(span2 == false && span1 == false){
-            $('ul.menu').css("height", "385px")
+            $('ul.menu').css("height", "485px")
         }
         else if(span2 == true && span1 == false){
             $('ul.menu').css("height", "515px")

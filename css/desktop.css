@@ -408,7 +408,7 @@ footer{
     height: 825px;
     background-color: rgb(25, 25, 25);
     position: relative;
-    top: 235px;
+    top: 234px;
     border-top: 55px solid rgb(209, 201, 9);
     border-bottom: 55px solid rgb(209, 201, 9);
 }
@@ -492,18 +492,18 @@ footer{
 
 .email-cel-container{
     height: 30px;
-    width: 450px;
+    width: 70%;
     display: flex;
     flex-direction: row;
     font-size: 14px;
     margin-top: 35px;
+    justify-content: space-between;
 }
 
 .email, .phone{
     display: flex;
     flex-direction: row;
-    height: 28px;
-    width: 200px;
+ 
 }
 
 .email i{
@@ -525,8 +525,6 @@ footer{
     width: 1px;
     margin-top: 2px;
     background-color: white;
-    margin-left: 69px;
-    margin-right: 69px;
     opacity: 0.4;
 }
 
@@ -539,6 +537,9 @@ footer{
     flex-direction: row;
 }
 
+.br-mobile{
+    display: none;
+}
 
 .address-span{
     font-size: 9px;
@@ -559,6 +560,9 @@ footer{
     width: 100%;
 }
 
+.p-mobile{
+    display: none;
+}
 
 .footer-right{
     float: right;
@@ -611,111 +615,6 @@ footer form input[type=submit]{
 }
 
 
+/***618 ROWS***/
 
 
-
-
-
-
-@media screen and (max-width: 1124px){
-    div.desktop-menu-items{
-        width: 70%;
-        margin-left: 7%;
-
-    }
-}
-
-@media screen and (max-width: 1037px){
-    
-    .footer-lorem{
-        margin-top: 96px;
-    }
-}
-@media screen and (max-width: 9490px){
-    div.logo{
-        margin: 20px auto;
-    }
-
-    div.desktop-menu-items{
-        display: none
-    }
-
-    div.mobile-menu-items{
-        display: flex;
-        flex-direction: column;
-    }
-    label{
-        display: block;
-    }
-    .banner-section{
-        background-size: 170% 120%;
-        background-position: center
-    }
-    section.banner-section  p{
-        position: relative;
-        top: -130px;
-        width: 75%;
-    }
-    .banner-section .full-digital{
-        top: 35%;
-    }
-    footer{
-        display: flex;
-        flex-direction: column;
-        height: 1090px;
-        border-top: 25px solid rgb(209, 201, 9);
-        border-bottom: 25px solid rgb(209, 201, 9);
-    }
-    .footer-right{
-        float: none;
-        width: 100%;
-        transform: none;
-    }
-    
-    .footer-left{
-        padding-left: 0%;
-        float: none;
-        width: 100%;
-        transform: none;
-        height: 50%;
-    }
-
-    .footer-media{
-        height: 40px;
-        width: 30%;
-        float: right;
-        position: absolute;
-        right: 0;
-    }
-
-    .footer-lorem{
-        text-align: center;
-    }
-    
-    .facebook{
-        margin-left: -15px;
-    }
-
-    .linkedin{
-        margin-right: 0px;
-    }
-
-    footer form{
-        height: 100%;
-        width: 100%;
-        left: 50%;
-        top: 50%;
-        transform: translateX(-50%)  translateY(-50%);
-        padding: 40px;
-    }
-
-    footer form textarea{
-        height: 20%;
-    }
-    .left-container{
-        padding: 70px;
-        padding-bottom: 0px;
-    }
-
-    
-}

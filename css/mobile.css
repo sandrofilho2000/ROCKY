@@ -1,0 +1,157 @@
+@media screen and (max-width: 1124px){
+    div.desktop-menu-items{
+        width: 70%;
+        margin-left: 7%;
+
+    }
+}
+
+@media screen and (max-width: 1037px){
+    
+    .footer-lorem{
+        margin-top: 96px;
+    }
+}
+@media screen and (max-width: 949px){
+    body, html{
+        background-image: none;
+    }
+    div.logo{
+        margin: 20px auto;
+    }
+
+    div.desktop-menu-items{
+        display: none
+    }
+
+    div.mobile-menu-items{
+        display: flex;
+        flex-direction: column;
+    }
+    label{
+        display: block;
+    }
+    .banner-section{
+        background-size: 170% 120%;
+        background-position: center
+    }
+    section.banner-section  p{
+        position: relative;
+        top: -130px;
+        width: 75%;
+    }
+    .banner-section .full-digital{
+        top: 35%;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        height: 1070px;
+        border-top: 25px solid rgb(209, 201, 9);
+        border-bottom: 25px solid rgb(209, 201, 9);
+    }
+    .footer-right{
+        float: none;
+        width: 100%;
+        transform: none;
+    }
+    
+    .footer-left{
+        padding-left: 0%;
+        float: none;
+        width: 100%;
+        transform: none;
+        height: 40%;
+    }
+
+    .footer-media{
+        height: 40px;
+        width: 30%;
+        float: right;
+        position: absolute;
+        right: 0;
+    }
+
+    .footer-lorem{
+        text-align: center;
+        margin-top: 110px;
+    }
+    
+    .footer-lorem p{
+        margin-bottom: 20px;
+    }
+
+    .p-desktop{
+        display: none;
+    }
+
+    .p-mobile{
+        display: block;
+    }
+    .facebook{
+        margin-left: -15px;
+    }
+
+    .linkedin{
+        margin-right: 0px;
+    }
+    .email-cel-container{
+        width: 100%;
+    }
+
+    
+    .address{
+        margin-top: 20px;
+    }
+    
+    footer form{
+        height: 100%;
+        width: 100%;
+        left: 50%;
+        top: 50%;
+        margin-top: 16px;
+        transform: translateX(-50%)  translateY(-50%);
+        padding: 40px;
+    }
+
+    footer form textarea{
+        height: 20%;
+    }
+    .left-container{
+        padding: 70px;
+        padding-bottom: 0px;
+    }
+
+    footer form input[type=submit]{
+        height: 20%;
+    }
+}
+
+@media screen and (max-width: 729px){
+    .footer-lorem{
+        margin-top: 90px;
+    }
+}
+
+@media screen and (max-width: 515px){
+    .footer-lorem{
+        margin-top: 70px;
+    }
+    .address{
+        width: 350px;
+    }
+    .br-mobile{
+        display: block;
+    }
+    .br-desktop{
+        display: none;
+    }
+
+    .email-cel-container{
+        width: 85%;
+        font-size: 13px;
+    }
+    .address span{
+        font-size: 10px;
+    }
+}

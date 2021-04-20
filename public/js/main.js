@@ -5,14 +5,22 @@ $(function(){
     let span1 = false
     let span2 = false
 
+
+    //Função para ativar ou desativar o menu MOBILE
+
+    //#1 Uma label toggle menu acionará um input check invisível quando clicada.
+
+    //#2 Caso o input check seja verdadeiro, o menu irá aparecer da direita.
+
+    //#3 Se for falso, ele será recolhido e o resto da aplicação estará visível.
     $('.checklabel').click(function(){
     
         if(check.checked==true){
-            $('.checklabel').css('left', '35%')
+            $('.checklabel').css('left', '42%')
             $(".mobile-menu-items").css('left', '0%')
-            $(".line").eq(0).css('transform', 'rotateZ(-45deg) translateY(370%)')
+            $(".line").eq(0).css('transform', 'rotateZ(-45deg) translateY(375%)')
             $(".line").eq(1).css('opacity', '0')
-            $(".line").eq(2).css('transform', 'rotateZ(45deg) translateY(-370%)')
+            $(".line").eq(2).css('transform', 'rotateZ(45deg) translateY(-375%)')
             $("li a span").html("▼")
         }
         else if(check.checked==false){
@@ -41,18 +49,34 @@ $(function(){
         }
         sp1++; 
         if(span2 == false && span1 == false){
-            $('ul.menu').css("height", "485px")
+            $('ul.menu').css("height", "530px")
         }
         else if(span2 == true && span1 == false){
-            $('ul.menu').css("height", "515px")
+            $('ul.menu').css("height", "625px")
         }
         else if(span2 == false && span1 == true){
-            $('ul.menu').css("height", "515px")
+            $('ul.menu').css("height", "625px")
         }
         else if(span2 == true && span1 == true){
-            $('ul.menu').css("height", "642px")
+            $('ul.menu').css("height", "752px")
         }
     })
+
+
+
+    //Função para ativar/desativar o submenu responsivo
+
+    //#1 Um par de funções foi criado para controlar os submenus, uma função para cada menu.
+
+    //#2 Quando o elemento "li span" for clicado, a variável int será incrementada.
+
+    //#3 Está variável poderá ser positiva ou negativa.
+
+    //#4 Quando negativa, é atribuida a classe "up" ao submenu, tornando-o invisível.
+
+    //#5 Quando positiva, a classe "up" é substituída pela classe "down", fazendo com que o submenu fique visível
+
+    //#6 A função altera a altura do menu principal dinamicamente dependendo de quantos submenus estão ativos no momento
 
     $("li span").eq(1).click(function(){
         if(sp2%2==0){
@@ -70,18 +94,59 @@ $(function(){
         }
         sp2++;
         if(span2 == false && span1 == false){
-            $('ul.menu').css("height", "385px")
+            $('ul.menu').css("height", "530px")
         }
         else if(span2 == true && span1 == false){
-            $('ul.menu').css("height", "515px")
+            $('ul.menu').css("height", "625px")
         }
         else if(span2 == false && span1 == true){
-            $('ul.menu').css("height", "515px")
+            $('ul.menu').css("height", "625px")
         }
         else if(span2 == true && span1 == true){
-            $('ul.menu').css("height", "642px")
+            $('ul.menu').css("height", "752px")
         }
     })
 
-    
+    function scrollTo(element){
+        document.querySelector(element).scrollIntoView({behavior: 'smooth'})
+    }
+
+    //Par de funções que redirecionam o usuário para o footer
+
+        $(".scroll2").click(function(e){
+            e.preventDefault();
+            scrollTo('footer')
+        })
 })
+
+
+
+
+
+
+
+    
+
+        
+
+
+
+
+    
+
+
+        
+
+
+
+
+    function scrollTo(element){
+        document.querySelector(element).scrollIntoView({behavior: 'smooth'})
+    }
+
+    //Par de funções que redirecionam o usuário para o footer
+
+        $(".scroll2").click(function(e){
+            e.preventDefault();
+            scrollTo('footer')
+        })

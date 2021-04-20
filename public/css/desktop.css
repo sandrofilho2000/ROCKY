@@ -8,25 +8,36 @@
 
 body, html{
     width: 100%;
+    height: 100%;
+    position: absolute;
     margin: 0 auto;
     font-family: Montserrat;
-    color: white;
-    background-image: url('../Imagens_teste-master/web/bg.png');
-    background-size: 105% 105%;
-    background-repeat: no-repeat;
+    color: white; 
+}
+
+/***HEADER***/
+header{
+    position: absolute; 
+    z-index: 3;
+}
+img{
+    position: relative;
+    z-index: 1;
 }
 
 
-/***HEADER***/
+
 /*NAV MENU'S*/
 nav{
-    position: absolute;
+    position: relative;
     display: flex;
     flex-direction: row;
     height: 70px;
     width: 100%;
-    line-height: 70px;
+    line-height: 72px;
     text-align: center;
+    transition: 0.6s;
+    z-index: 99;
 }
 
 .logo{
@@ -37,31 +48,33 @@ nav{
     width: 150px;
     background-image: url('../Imagens_teste-master/web/logo.png');
     background-size: 100% 100%;
-    margin-top: 15px;
+    background-position: center;
+    margin-top: 20px;
     background-repeat: no-repeat;
 }
 
 .desktop-menu-items{
     width: 57%;
-    margin-left: 17%;
-    padding: 0.1%;
+    margin-left: 17.5%;
 }
 
 .desktop-menu-items ul{
     width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     list-style-type: none;
-    justify-content: space-around;
+    margin-right: 15%;
 }
 
 .desktop-menu-items ul li a{
     color: white;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 500;
     white-space: nowrap;
-    transition: 0.3s
+    transition: 0.3s;
+    margin-right: 45px;
+    font-weight: bold;
 }
 
 nav ul li a:hover{
@@ -74,50 +87,58 @@ nav ul li a:hover{
 /*BANNER SECTION*/
 .banner-section{
     width: 100%;
-    height: 119vh;
-    background-image: url('../Imagens_teste-master/web/s1 ft1.png');
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+    height: 781.93px;
+    min-height: 781.93px;
     text-align: center;
+}
+
+.img-desktop{
+    height: 696px;
+    min-height: 696px;
+}
+.bg{
+    position: absolute;
+    background-image: url('../Imagens_teste-master/web/bg5.png');
+    background-size: 100% 100%;
+    background-position: center;
+    top: 694px;
+    height: 2320px;
+    width: 100%;
 }
 
 .banner-section .full-digital{
     width: 65%;
-    height: 500px;
+    height: 40%;
     font-weight: 300;
     margin: 0 auto;
     position: relative;
-    top: 48.5%;
-    transform: translateY(-50%);
+    top: 140px;
     text-align: center;
-    line-height: 140px;
+    line-height: 125px;
     
 }
 
 .full-digital h1{
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 7.4vw;
-    position: relative;
+    font-size: 7.35vw;
 }
 
 .banner-section  p{
     margin: 0 auto;
-    width: 50%;
-    font-weight: lighter;
-
+    margin-top: 130px;
+    width: 53%;
+    font-weight: bold;
+    font-size: 13px;
 }
 
 .banner-section .banner-btn{
-    width: 270px;
+    width: 240px;
     margin: 0 auto;
     margin-top: 70px;
     background-color: rgb(28, 212, 233);
     padding: 20px 15px;
     border-radius: 35px;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 14px;
     cursor: pointer;
 }
 /*end banner section*/
@@ -126,28 +147,36 @@ nav ul li a:hover{
 
 /***MAIN SECTION ABOUT***/
 .about{
+    height: auto;
     width: 100%;
     position: relative;
-    padding: 0 120px; 
+    padding: 0 115px; 
+    box-sizing: border-box;
+    z-index: 2;
+
 }
 
 .sobre-container{
-    width: 72%;
-    height: 500px;
+    width: 75%;
+    height: 450px;
     position: relative;
 }
 
-.sobre-container h2{
+h2{
     color: black;
     font-size: 40px;
-    margin-top: 50px;
+    margin-top: 70px;
+}
+
+.sobre-container p{
+    font-size: 14px;
 }
 
 .sobre{
     color: black;
     background-color: white;
     box-shadow: 1px -2px 27px -11px rgba(0,0,0,1);
-    margin-top: 80px;
+    margin-top: 110px;
     padding: 35px;
     
 }
@@ -163,10 +192,7 @@ nav ul li a:hover{
 .servicos{
     width: 100%;
     height: 600px;
-    margin-top: 310px;
-}
-
-.servicos-container{
+    margin-top: 280px;
     height: 100%;
     display: flex;
     text-align: center;
@@ -174,28 +200,30 @@ nav ul li a:hover{
 }
 
 .servicos h2{
-    color: black;
-    font-size: 40px;
+    position: absolute;
+    top: 650px;
 }
 
 .serv{
-    margin-top: 85px;
-    height: 440px;
+    margin-top: 150px;
+    height: 480px;
     float: left;
-    width: calc(95% / 3);
+    width: calc(100% / 3);
     background-image: url('../Imagens_teste-master/web/s3\ ft3.png');
     background-position: center;
     background-size: 100% 100%;
     background-repeat: no-repeat;
     text-align: center;
     padding: 45px 0;
+    position: relative;
+    
 }
 
 .serv h3{
     white-space: nowrap;
     margin: 0 auto;
     justify-content: center;
-    font-size: 1.3vw;
+    font-size: 1.4vw;
 }
 
 .serv p{
@@ -209,16 +237,16 @@ nav ul li a:hover{
 }
 .servico1{
     background-image: url('../Imagens_teste-master/web/s3\ ft1.png');
+    margin-left: -15px;
 }
 .servico2{
     background-image: url('../Imagens_teste-master/web/s3\ ft2.png');
 }
 .servico3{
     background-image: url('../Imagens_teste-master/web/s3\ ft3.png');
+    margin-right: -15px;
 }
 /*end services section*/
-
-
 
 
 /*DIFFERENCIAL SECTION*/
@@ -229,21 +257,21 @@ nav ul li a:hover{
     display: flex;
     flex-direction: row;
     position: relative;
-    top: 100px;
+    z-index: 2;
+    top: 140px;
     bottom: 30px;
     justify-content: space-between;
 }
 
 .diferente h2{
-    color: black;
-    font-size: 40px;
     position: absolute;
+    top: -80px;
 }
 
 .dife{
-    margin-top: 130px;
+    margin-top: 150px;
     height: 470px;
-    max-width: 270px;
+    width: 270px;
     background-position: center;
     background-size: 100% 100%;
     text-align: center;
@@ -255,27 +283,23 @@ nav ul li a:hover{
     margin-top: 25px;
 }
 
-.dife h3{
-    white-space: nowrap;
-    margin: 0 auto;
-    justify-content: center;
-}
-
 .dife p{
     width: 68%;
     margin: 0 auto;
     margin-top: 30px;
 }
 
-div.diferencial1{
+.diferencial1{
     background-image: url('../Imagens_teste-master/web/s4\ ft1.png');
+    margin-left: -14px;
 }
-div.diferencial2{
+.diferencial2{
     background-image: url('../Imagens_teste-master/web/s4\ ft2.png');
 
 }
-div.diferencial3{
+.diferencial3{
     background-image: url('../Imagens_teste-master/web/s4\ ft3.png');
+    margin-right: -14px;
 }
 /*end differencial section*/
 /***end main section about***/
@@ -288,10 +312,11 @@ div.diferencial3{
 
 footer{
     width: 100%;
-    height: 850px;
+    height: 737px;
     background-color: rgb(25, 25, 25);
     position: relative;
-    top: 234px;
+    z-index: 2;
+    top: 288px;
     border-top: 55px solid rgb(209, 201, 9);
     border-bottom: 55px solid rgb(209, 201, 9);
 }
@@ -303,13 +328,14 @@ footer{
     top: 30%;
     left: 50%;
     transform: translateY(-30%) translateX(-50%);
-    padding-top: 15px;
+    padding-top: 50px;
 }
 
 .f-inner{
     vertical-align: middle;
     width: 30%;
     height: 75%;
+    padding-top: 70px
 }
 
 /*FOOTER LEFT SIDE*/
@@ -317,14 +343,11 @@ footer{
     float: left;
     width: 50%;
     height: 100%;
+    padding-left: 7%;
 }
 
-.left-container{
-    padding-left: 13%;
-}
-
-.right-container{
-    padding-left: 0%;
+.footer-right{
+    padding-right: 7%;
 }
 
 .icons{
@@ -336,6 +359,7 @@ footer{
 .footer-media{
     height: 40px;
     width: 30%;
+    min-width: 113px;
     float: right;
     text-align: center;
 }
@@ -350,25 +374,26 @@ footer{
 }
 
 .facebook {
-    height: 38px;
-    width: 43px;
-    background-image: url('../Imagens_teste-master/web/facebook-icon.png');
+    height: 30px;
+    width: 30px;
+    background-image: url('../Imagens_teste-master/web/facebook.png');
     filter: grayscale(1) invert(1);
     background-size: 100% 100%;
     float: right;
-    margin-right: 32px;
-    margin-top: 1px;
+    margin-right: 40px;
+    margin-top: 5px;
 }
 
 .linkedin{
     height: 30px;
     width: 30px;
-    background-image: url('../Imagens_teste-master/web/linkedin-icon.png');
+    background-image: url('../Imagens_teste-master/web/linkedin.png');
     filter: grayscale(1) invert(1);
     background-size: 100% 100%;
     float: right;
-    margin-right: -10px;
+    margin-right: 5px;
     margin-top: 5px;
+
 }
 
 .email-cel-container{
@@ -377,7 +402,7 @@ footer{
     display: flex;
     flex-direction: row;
     font-size: 14px;
-    margin-top: 35px;
+    margin-top: 30px;
     justify-content: space-between;
 }
 
@@ -410,7 +435,7 @@ footer{
 
 .address{
     position: absolute;
-    margin-top: 35px;
+    margin-top: 30px;
     width: 450px;
     display: flex;
     flex-direction: row;
@@ -429,13 +454,14 @@ footer{
 
 
 .footer-lorem{
-    margin-top: 110px;
+    margin-top: 106px;
     position: relative;
+    width: 425px;
 }
 
 
 .footer-lorem p{
-    margin-bottom: 26px;
+    margin-bottom: 19.5px;
     width: 100%;
 }
 
@@ -456,22 +482,28 @@ footer{
 
 footer form{
     background-color: rgb(129, 129, 129);
-    height: 93%;
-    width: 65%;
+    height: 94.5%;
+    width: 80%;
     position: relative;
-    right: -21%;
     display: flex;
     flex-direction: column;
     padding: 20px 20px 0 20px;
+    float: right;
 }
 
-footer form input{
+footer form input, select{
     border: none;
     margin-bottom: 30px;
     height: 60px;
     padding: 15px;
     font-size: 22px;
 }
+
+footer form input:focus, select:focus{
+    border-left: 3px solid rgb(239, 230, 11);
+    outline: none;
+}
+
 footer form input::placeholder{
     color: rgb(215, 215, 215);
 }
@@ -481,6 +513,11 @@ footer form textarea{
     border: none;
     padding: 15px;
     font-size: 22px;
+}
+
+footer form textarea:focus{
+    border-left: 3px solid rgb(239, 230, 11);
+    outline: none;
 }
 
 footer form textarea::placeholder{
@@ -502,5 +539,4 @@ footer form input[type=submit]{
 /***END DESKTOP***/
 
 /***645 ROWS***/
-
 
